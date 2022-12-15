@@ -30,6 +30,9 @@ const EditPhoto = () => {
         alert(json?.error);
       }
     })
+    .catch((err) => {
+      setError(err);
+    });
   };
 
   useEffect(() => {
